@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="imagenes/LOGO.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 100vh; 
+            position: relative; 
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Estilos de encabezado */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 100px; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Estilos de secciones */
+        section {
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 2px;
+        }
+
+        /* Estilos de productos */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            flex: 1 1 calc(33.333% - 20px);
+            margin-bottom: 30px;
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+            
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; 
+        }
+
+        footer {
+            background-color: #333;
+            color: #fdfdfd;
+            padding: 20px 0;
+            text-align: center;
+            clear: both;
+            width: 100%;
+            position: absolute;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="left">
+            <form class="form-inline" action="#" method="get">
+                <input class="form-control mr-sm-2" type="search" name="q" placeholder="Buscar...">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="center text-center">
+            <h1 class="title">Life Shop</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <ul class="navbar-nav mr-auto menu">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/ofertas.html">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <img src="/imagenes/LOGO.jpg" alt="Logo De Ropa" class="logo">
+        </div>
+    </div>
+</header>
+
+<section id="banner">
+    <div class="container">
+        <h2>Ofertas Especiales</h2> 
+        <p>Descubre las mejores ofertas en nuestra tienda de ropa.</p> 
+    </div>
+</section>
+
+<section id="ropa" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Productos en Oferta</h2> 
+        <div class="row products">
+            <div class="col-md-4 product">
+                <img src="/imagenes/ROPA HOMBRE/remera.jpeg" alt="Remera" class="img-fluid">
+            </div>
+            <div class="col-md-4 product">
+                <img src="/imagenes/ROPA MUJER/vestido x3.jpg" alt="Vestido" class="img-fluid">
+            </div>
+            <div class="col-md-4 product">
+                <img src="/imagenes/ROPA HOMBRE/Bermudas.webp" alt="Bermudas" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-5 bg-light-gray">
+    <div class="container">
+        <h2 class="text-center">Acerca de nosotros:</h2>
+        <p class="text-center">Somos una empresa comprometida en brindar los mejores productos y servicios a nuestros clientes.</p>
+    </div>
+</section>
+
+<section id="service" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Nuestros Servicios:</h2>
+        <div class="row">
+            <div class="col-md-6 service-item">
+                <h3>Envío a domicilio</h3>
+                <p>Envío gratis a todo el país</p>
+            </div>
+            <div class="col-md-6 service-item">
+                <h3>Servicio al cliente en línea</h3>
+                <p>Ofrecemos un soporte de chat en línea, para poder brindar soluciones</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>Derechos de autor &copy; 2024 - Life Shop</p>
+        <p>Lorem
