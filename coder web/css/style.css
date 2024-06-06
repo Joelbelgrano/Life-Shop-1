@@ -1,24 +1,18 @@
 /* Estilos generales */
+
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-    background-color: #f4f4f4;
+    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+/* Estilos del header */
 
-/* Estilos de encabezado */
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #09080e; /* Color azul */
+    color: white;
+    padding: 10px 0;
 }
 
 .header-content {
@@ -27,161 +21,73 @@ header {
     align-items: center;
 }
 
-.logo {
-    width: 110px;
+.header-content .left {
+    flex: 1;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Estilos de secciones */
-section {
-    padding: 40px 0;
+.header-content .center {
+    flex: 2;
     text-align: center;
 }
 
-section h2 {
-    margin-bottom: 20px;
+.header-content .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Para centrar verticalmente el logo */
 }
 
-/* Estilos de productos */
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Estilos del header */
+
+.header-content .logo {
+    max-width: 100px; /* Tamaño reducido del logo */
+    height: auto;
+    margin-right: 50%; /* Mover el logo a la derecha */
 }
+
+
+/* Estilos específicos de productos */
 
 .product {
-    flex: 1 1 calc(33.333% - 20px);
-    margin: 10px;
     text-align: center;
 }
 
 .product img {
     width: 100%;
     height: auto;
-    max-height: 800px;
-}
-.product img {
-    height: 110%; 
-    width: auto;
 }
 
-/* Estilos de formulario de contacto */
-#contacto form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+/* Estilos del banner */
 
-#contacto form label,
-#contacto form input,
-#contacto form textarea,
-#contacto form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-}
-
-#contacto form input,
-#contacto form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#contacto form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-}
-
-/* Estilos de pie de página */
-footer {
-    background-color: #007bff;
-    color: #fff;
-    padding: 40px 0;
+#banner {
+    background: url('../imagenes/banner.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(5, 4, 4);
     text-align: center;
-}
-/* Estilos generales */
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-    background-color: #f4f4f4;
+    padding: 100px 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Estilos de las secciones de "About" y "Service" */
+
+#about, #service {
+    background-color: #f8f9fa;
+    flex: 1;
 }
 
-/* Estilos de encabezado */
-header {
-    background-color: #007bff;
-    color: #fff;
+.custom-image {
+    width: 300px; /* Ancho específico en píxeles */
+    height: 2000px; /* Altura específica en píxeles */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #000000;
+    color:white;
     padding: 20px 0;
     text-align: center;
-}
-
-/* Estilos de secciones */
-section {
-    padding: 40px 0;
-    text-align: center;
-}
-
-section h2 {
-    margin-bottom: 20px;
-}
-
-/* Estilos de productos */
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.product {
-    flex: 1 1 calc(33.333% - 20px);
-    margin: 10px;
-    text-align: center;
-}
-
-.product img {
     width: 100%;
-    height: auto;
-    max-height: 800px;
 }
-
-/* Estilos de pie de página */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    width: 100%; 
-    position: fixed; 
-    bottom: 0; 
+img {
+    border: 2px solid black; 
+    border-radius: 3px; 
 }

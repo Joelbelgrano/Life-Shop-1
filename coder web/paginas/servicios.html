@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Shop - Ropa de Hombre</title>
+    <title>Life Shop - Servicios</title>
     <!-- Enlaces a los estilos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="icon" href="/imagenes/LOGO.jpg">
+    <link rel="icon" href="../imagenes/LOGO.jpg">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -21,10 +21,6 @@
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
             </form>
         </div>
-        <div class="right">
-            <!-- Logo del sitio -->
-            <img src="/imagenes/LOGO.jpg" alt="Logo De Ropa" class="logo">
-        </div>
         <div class="center text-center">
             <!-- Título del sitio y menú de navegación -->
             <h1 class="title">Life Shop</h1>
@@ -33,44 +29,54 @@
                     <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="/paginas/productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="/paginas/ofertas.html">Ofertas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/paginas/servicios.html">Servicios</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/paginas/servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="/paginas/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
+        <div class="right">
+            <!-- Logo del sitio -->
+            <img src="../imagenes/LOGO.jpg" alt="Logo De Ropa" class="logo">
+        </div>
     </div>
 </header>
 
-<section id="ropa_hombre" class="py-5">
-    <!-- Sección de ropa para hombre -->
+<section id="service" class="py-5">
+    <!-- Sección de servicios -->
     <div class="container">
-        <h2 class="text-center">Ropa de Hombre</h2>
-        <p class="text-center">Descubre nuestra colección de ropa para hombre.</p>
-        <div class="row products">
-            <!-- Productos -->
-            <div class="col-md-4 product">
-                <img src="/imagenes/ROPA HOMBRE/camisa-de-cuadros.jpg" alt="Producto 1" class="img-fluid modified-image">
-                <h3 class="product-title">Camiseta de Algodón</h3>
-                <p class="product-description">Camiseta casual de algodón para hombre.</p>
-                <button class="btn btn-primary">Comprar</button>
+        <h2 class="text-center">Nuestros Servicios</h2>
+        <p class="text-center mb-4">En Life Shop ofrecemos servicios de alta calidad para satisfacer todas tus necesidades de compra.</p>
+        <div class="row">
+            <!-- Lista de servicios -->
+            <div class="col-md-6">
+                <div class="service-item">
+                    <h3>Envío a domicilio</h3>
+                    <p>Envío gratis a todo el país para que recibas tus compras sin salir de casa.</p>
+                </div>
             </div>
-            <div class="col-md-4 product">
-                <img src="/imagenes/ROPA HOMBRE/cuero.jpg" alt="Producto 2" class="img-fluid modified-image">
-                <h3 class="product-title">Chaqueta de Cuero</h3>
-                <p class="product-description">Chaqueta de cuero genuino para hombre.</p>
-                <button class="btn btn-primary">Comprar</button>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <h3>Servicio al cliente en línea</h3>
+                    <p>Ofrecemos un soporte de chat en línea para brindarte soluciones rápidas y efectivas a tus consultas.</p>
+                </div>
             </div>
-            <div class="col-md-4 product">
-                <img src="/imagenes/ROPA HOMBRE/jeans.jpg" alt="Producto 3" class="img-fluid modified-image">
-                <h3 class="product-title">Pantalón Vaquero</h3>
-                <p class="product-description">Pantalón vaquero de estilo moderno para hombre.</p>
-                <button class="btn btn-primary">Comprar</button>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <h3>Devoluciones fáciles</h3>
+                    <p>Proceso de devoluciones sencillo y sin complicaciones. Compra con total confianza.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <h3>Descuentos y promociones</h3>
+                    <p>Accede a descuentos y promociones exclusivas registrándote en nuestro boletín.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="bg-dark text-white mt-auto">
+<footer class="bg-dark text-white mt-5">
     <!-- Pie de página -->
     <div class="container py-4">
         <p class="mb-0 text-center">Derechos de autor &copy; 2024 - Life Shop</p>

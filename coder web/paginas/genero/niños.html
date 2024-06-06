@@ -3,108 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ropa para Niños - Lifeshop</title>
+    <title>Life Shop - Ropa de Niño</title>
+    <!-- Enlaces a los estilos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="imagenes/LOGO.jpg">
+    <link rel="icon" href="/imagenes/LOGO.jpg">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<style> 
-.logo {
-            max-width: 100px; 
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-</style>
-<header class="bg-primary text-white py-3">
-    <div class="container d-flex justify-content-between align-items-center">
+
+<header>
+    <!-- Encabezado de la página -->
+    <div class="container header-content">
         <div class="left">
+            <!-- Formulario de búsqueda -->
             <form class="form-inline" action="#" method="get">
                 <input class="form-control mr-sm-2" type="search" name="q" placeholder="Buscar...">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
             </form>
         </div>
-        <div class="center">
-            <h1 class="title">Lifeshop</h1>
+        <div class="right">
+            <!-- Logo del sitio -->
+            <img src="/imagenes/LOGO.jpg" alt="Logo De Ropa" class="logo">
+        </div>
+        <div class="center text-center">
+            <!-- Título del sitio y menú de navegación -->
+            <h1 class="title">Life Shop</h1>
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <ul class="navbar-nav mr-auto Menu">
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/paginas/productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/paginas/ofertas.html">Ofertas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/paginas/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/genero/hombre.html">Hombre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/genero/mujer.html">Mujer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/genero/niños.html">Niños</a></li>
                     <li class="nav-item"><a class="nav-link" href="/paginas/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="right">
-            <img src="/imagenes/LOGO.jpg" alt="Logo de Lifeshop" class="logo">
-        </div>
     </div>
 </header>
 
-<section id="banner" class="bg-light py-5 text-center">
+<section id="ropa_niño" class="py-5">
+    <!-- Sección de ropa para niño -->
     <div class="container">
-        <h2>Bienvenido a Lifeshop</h2>
-        <p>Descubre la mejor ropa para niños de todas las edades.</p>
-    </div>
-</section>
-
-<section id="ropa-ninos" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Ropa para Niños</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="/imagenes/ROPA NIÑO/remera-de-nino.jpg" class="card-img-top" alt="Ropa Niño 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Camiseta Divertida</h5>
-                        <p class="card-text">Precio: $10</p>
-                    </div>
-                </div>
+        <h2 class="text-center">Ropa de Niño</h2>
+        <p class="text-center">Descubre nuestra colección de ropa para niños.</p>
+        <div class="row products">
+            <!-- Productos -->
+            <div class="col-md-4 product">
+                <img src="/imagenes/ROPA NIÑO/remera-de-nino.jpg" alt="Producto 1" class="img-fluid modified-image">
+                <h3 class="product-title">Camiseta de Niño</h3>
+                <p class="product-description">Camiseta cómoda para niños.</p>
+                <button class="btn btn-primary">Comprar</button>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="/imagenes/ROPA NIÑO/jeans niño.jpg" class="card-img-top" alt="Ropa Niño 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Pantalones Cómodos</h5>
-                        <p class="card-text">Precio: $20</p>
-                    </div>
-                </div>
+            <div class="col-md-4 product">
+                <img src="/imagenes/ROPA NIÑO/jeans niño.jpg" alt="Producto 2" class="img-fluid modified-image">
+                <h3 class="product-title">Pantalón Corto</h3>
+                <p class="product-description">Jeans de niño.</p>
+                <button class="btn btn-primary">Comprar</button>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="/imagenes/ROPA NIÑO/chaqueta de niño.jpg" class="card-img-top" alt="Ropa Niño 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Chaqueta Moderna</h5>
-                        <p class="card-text">Precio: $40    </p>
-                    </div>
-                </div>
+            <div class="col-md-4 product">
+                <img src="/imagenes/ROPA NIÑO/chaqueta de niño.jpg" alt="Producto 3" class="img-fluid modified-image">
+                <h3 class="product-title">Chaqueta de niño</h3>
+                <p class="product-description">Chaqueta de niño</p>
+                <button class="btn btn-primary">Comprar</button>
             </div>
         </div>
     </div>
 </section>
 
-<section id="about" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Acerca de Nosotros</h2>
-        <p class="text-center">Somos una tienda dedicada a ofrecer ropa de alta calidad para niños, con diseños modernos y cómodos para todas las edades.</p>
-    </div>
-</section>
-
-<footer class="bg-primary text-white py-3">
-    <div class="container text-center">
-        <p>Derechos de autor &copy; 2024 - Kids Fashion</p>
-        <p>Contacto: info@kidsfashion.com | Teléfono: +123456789</p>
+<footer class="bg-dark text-white mt-5">
+    <!-- Pie de página -->
+    <div class="container py-4">
+        <p class="mb-0 text-center">Derechos de autor &copy; 2024 - Life Shop</p>
+        <p class="mb-0 text-center">Encuentra las mejores prendas a los mejores precios. Síguenos en nuestras redes sociales para más información y ofertas exclusivas.</p>
     </div>
 </footer>
 

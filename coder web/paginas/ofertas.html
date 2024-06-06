@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Shop - Ropa de Hombre</title>
+    <title>Life Shop - Ofertas</title>
     <!-- Enlaces a los estilos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="icon" href="/imagenes/LOGO.jpg">
+    <link rel="icon" href="../imagenes/LOGO.jpg">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -21,10 +21,6 @@
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
             </form>
         </div>
-        <div class="right">
-            <!-- Logo del sitio -->
-            <img src="/imagenes/LOGO.jpg" alt="Logo De Ropa" class="logo">
-        </div>
         <div class="center text-center">
             <!-- Título del sitio y menú de navegación -->
             <h1 class="title">Life Shop</h1>
@@ -38,43 +34,55 @@
                 </ul>
             </nav>
         </div>
+        <div class="right">
+            <!-- Logo del sitio -->
+            <img src="../imagenes/LOGO.jpg" alt="Logo De Ropa" class="logo">
+        </div>
     </div>
 </header>
 
-<section id="ropa_hombre" class="py-5">
-    <!-- Sección de ropa para hombre -->
+<section id="banner">
+    <!-- Banner de ofertas especiales -->
     <div class="container">
-        <h2 class="text-center">Ropa de Hombre</h2>
-        <p class="text-center">Descubre nuestra colección de ropa para hombre.</p>
+        <h2>Ofertas Especiales</h2> 
+        <p>Descubre las mejores ofertas en nuestra tienda de ropa. Ahorra dinero sin sacrificar estilo.</p> 
+    </div>
+</section>
+
+<section id="ropa" class="py-5">
+    <!-- Sección de productos en oferta -->
+    <div class="container">
+        <h2 class="text-center mb-4">Productos en Oferta</h2> 
+        <p class="text-center mb-4">Aprovecha nuestras ofertas exclusivas en una selección de productos. ¡No te lo pierdas!</p>
         <div class="row products">
-            <!-- Productos -->
+            <!-- Productos en oferta -->
             <div class="col-md-4 product">
-                <img src="/imagenes/ROPA HOMBRE/camisa-de-cuadros.jpg" alt="Producto 1" class="img-fluid modified-image">
-                <h3 class="product-title">Camiseta de Algodón</h3>
-                <p class="product-description">Camiseta casual de algodón para hombre.</p>
+                <img src="../imagenes/ROPA HOMBRE/remera.jpeg" alt="Remera" class="img-fluid modified-image">
+                <h3 class="product-title">Remera</h3>
+                <p class="product-description">Remera casual para hombre, ahora con un 20% de descuento. Material de alta calidad y diseño moderno.</p>
                 <button class="btn btn-primary">Comprar</button>
             </div>
             <div class="col-md-4 product">
-                <img src="/imagenes/ROPA HOMBRE/cuero.jpg" alt="Producto 2" class="img-fluid modified-image">
-                <h3 class="product-title">Chaqueta de Cuero</h3>
-                <p class="product-description">Chaqueta de cuero genuino para hombre.</p>
+                <img src="../imagenes/ROPA MUJER/vestido x3.jpg" alt="Vestido" class="img-fluid modified-image">
+                <h3 class="product-title">Vestido</h3>
+                <p class="product-description">Vestido elegante para mujer, con un 30% de descuento. Ideal para eventos especiales.</p>
                 <button class="btn btn-primary">Comprar</button>
             </div>
             <div class="col-md-4 product">
-                <img src="/imagenes/ROPA HOMBRE/jeans.jpg" alt="Producto 3" class="img-fluid modified-image">
-                <h3 class="product-title">Pantalón Vaquero</h3>
-                <p class="product-description">Pantalón vaquero de estilo moderno para hombre.</p>
+                <img src="/imagenes/ROPA HOMBRE/pantalones.jpg" alt="Bermudas" class="img-fluid modified-image">
+                <h3 class="product-title">Pantalones</h3>
+                <p class="product-description">Pantalones para hombre, con un 25% de descuento. Perfectos para el verano.</p>
                 <button class="btn btn-primary">Comprar</button>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="bg-dark text-white mt-auto">
+<footer>
     <!-- Pie de página -->
-    <div class="container py-4">
-        <p class="mb-0 text-center">Derechos de autor &copy; 2024 - Life Shop</p>
-        <p class="mb-0 text-center">Encuentra las mejores prendas a los mejores precios. Síguenos en nuestras redes sociales para más información y ofertas exclusivas.</p>
+    <div class="container">
+        <p>Derechos de autor &copy; 2024 - Life Shop
+        <p>Encuentra las mejores prendas a los mejores precios. Síguenos en nuestras redes sociales para más información y ofertas exclusivas.</p>
     </div>
 </footer>
 

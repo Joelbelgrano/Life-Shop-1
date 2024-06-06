@@ -4,133 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Shop</title>
+    <!-- Enlaces a los estilos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="imagenes/LOGO.jpg">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif; 
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            min-height: 100vh; 
-            position: relative; 
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Estilos de encabezado */
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            max-width: 100px; 
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        /* Estilos de secciones */
-        section {
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        section h2 {
-            margin-bottom: 2px;
-        }
-
-        /* Estilos de productos */
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .product {
-            flex: 1 1 calc(33.333% - 20px);
-            margin-bottom: 30px;
-            border-radius: 10px; 
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
-            
-        }
-
-        .product img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px; 
-        }
-
-        footer {
-            background-color: #333;
-            color: #fdfdfd;
-            padding: 20px 0;
-            text-align: center;
-            clear: both;
-            width: 100%;
-            position: absolute;
-            margin-bottom: 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css"> 
 </head>
 <body>
 
 <header>
+    <!-- Encabezado de la página -->
     <div class="container header-content">
         <div class="left">
+            <!-- Formulario de búsqueda -->
             <form class="form-inline" action="#" method="get">
                 <input class="form-control mr-sm-2" type="search" name="q" placeholder="Buscar...">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
             </form>
         </div>
         <div class="center text-center">
+            <!-- Título del sitio -->
             <h1 class="title">Life Shop</h1>
+            <!-- Menú de navegación -->
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <ul class="navbar-nav mr-auto menu">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paginas/productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paginas/ofertas.html">Ofertas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paginas/servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/ofertas.html">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
         <div class="right">
+            <!-- Logo del sitio -->
             <img src="/imagenes/LOGO.jpg" alt="Logo De Ropa" class="logo">
         </div>
     </div>
 </header>
 
 <section id="banner">
+    <!-- Sección de banner con ofertas especiales -->
     <div class="container">
         <h2>Ofertas Especiales</h2> 
         <p>Descubre las mejores ofertas en nuestra tienda de ropa.</p> 
@@ -138,23 +51,28 @@
 </section>
 
 <section id="ropa" class="py-5">
+    <!-- Sección de productos en oferta -->
     <div class="container">
         <h2 class="text-center mb-4">Productos en Oferta</h2> 
         <div class="row products">
             <div class="col-md-4 product">
-                <img src="/imagenes/ROPA HOMBRE/remera.jpeg" alt="Remera" class="img-fluid">
+                <!-- Imagen 1 -->
+                <img src="/imagenes/ROPA HOMBRE/casual.jpg" alt="Remera" class="img-fluid modified-image">
             </div>
             <div class="col-md-4 product">
-                <img src="/imagenes/ROPA MUJER/vestido x3.jpg" alt="Vestido" class="img-fluid">
+                <!-- Imagen 2 -->
+                <img src="/imagenes/ROPA MUJER/verano.webp" alt="Vestido" class="img-fluid modified-image">
             </div>
             <div class="col-md-4 product">
-                <img src="/imagenes/ROPA HOMBRE/Bermudas.webp" alt="Bermudas" class="img-fluid">
+                <!-- Imagen 3 -->
+                <img src="imagenes/ROPA HOMBRE/cargo.jpg" alt="pantalon" class="img-fluid custom-image">
             </div>
         </div>
     </div>
 </section>
 
 <section id="about" class="py-5 bg-light-gray">
+    <!-- Acerca de nosotros -->
     <div class="container">
         <h2 class="text-center">Acerca de nosotros:</h2>
         <p class="text-center">Somos una empresa comprometida en brindar los mejores productos y servicios a nuestros clientes.</p>
@@ -162,6 +80,7 @@
 </section>
 
 <section id="service" class="py-5">
+    <!-- Nuestros Servicios -->
     <div class="container">
         <h2 class="text-center">Nuestros Servicios:</h2>
         <div class="row">
@@ -176,7 +95,14 @@
         </div>
     </div>
 </section>
+
 <footer>
+    <!-- Pie de página -->
     <div class="container">
         <p>Derechos de autor &copy; 2024 - Life Shop</p>
-        <p>Lorem
+        <p>Encuentra las mejores prendas a los mejores precios. Síguenos en nuestras redes sociales para más información y ofertas exclusivas.</p>
+    </div>
+</footer>
+
+</body>
+</html>
